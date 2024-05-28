@@ -1,16 +1,18 @@
 /* Estilos gerais */
 *{
   box-sizing: border-box;
-  font-family: Shanti;
+  font-family: sans-serif
 }
 
 /* Estilos do body */
 body{
   justify-content: center;
-  background: #094493
+  background: #101652
 }
 
-
+.from-text {
+  color: #207178;
+}
 .header{
   width: 25%;
   justify-content: left;
@@ -20,7 +22,7 @@ body{
 .container{
   width: 95%;
   padding: 0 30px 30px 30px;
-  background: #ffffff;
+  background: #edeccf;
   border-radius: 20px;
   position: absolute;
   top: 50%;
@@ -30,17 +32,25 @@ body{
 
 .wrapper{
   border-radius: 10px;
-  border: 3px solid #bdd5ff;
+  border: 3px solid #2071787c;
 }
 
 .wrapper .text-input{
   display: flex;
-  border-bottom: 3px solid #bdd5ff;
+  border-bottom: 3px solid #2071787c;
 }
 .text-input .to-text{
+  color: #edeccf;
   border-radius: 0px;
-  border-left: 3px solid #bdd5ff;
-  background-color: #bdd5ff;
+  border-left: 3px solid #2071787c;
+  background-color: #2071787c;
+}
+
+.selects {
+  background-color: #2071787c;
+  padding: 3px;
+  border-radius: 8px;
+  color: #edeccf;
 }
 
 .text-input textarea{
@@ -49,7 +59,7 @@ body{
   border: none;
   outline: none;
   resize: none;
-  background: #fafafa;
+  background: #edeccf;
   font-size: 24px;
   padding: 10px 10px;
   border-radius: 5px;
@@ -76,10 +86,10 @@ body{
   font-size: 25px;
   padding: 6px;
   border: none;
-  color: #fff;
+  color: #edeccf;
   cursor: pointer;
   border-radius: 10px;
-  background: #bdd5ff;
+  background: #2071787b;
   width: 115%;
 }
 
@@ -90,8 +100,8 @@ body{
   padding: 14px;
   outline: none;
   border: none;
-  color: #fff;
+  color: #edeccf;
   cursor: pointer;
   border-radius: 5px;
-  background: #0376E2
+  background: #207178
 }
