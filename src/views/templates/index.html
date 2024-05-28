@@ -1,13 +1,13 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Traduzo - Trybe</title>
+  <title>Translate</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 
 <body>
   <div class="container">
-      <img src="{{ url_for('static', filename='images/logo.png') }}" class="header">
+      <h1>Translate</h1>
     <div class="wrapper">
       <form method="post">
         <div class="text-input">
@@ -16,7 +16,7 @@
         </div>
         <ul class="controls">
           <li class="row from">
-            <select name="translate-from">
+            <select name="translate-from" class='selects'>
               {% for language in languages %}
                 <option value="{{ language.acronym }}" {% if language.acronym == translate_from %} selected {% endif %}>{{ language.name.upper() }}</option>
               {% endfor %}
@@ -26,7 +26,7 @@
             <button class="tool" type="submit" formaction="/reverse">🔁</button>
           </div>
           <li class="row to">
-            <select name="translate-to">
+            <select name="translate-to" class='selects'>
               {% for language in languages %}
                 <option value="{{ language.acronym }}" {% if language.acronym == translate_to %} selected {% endif %}>{{ language.name.upper() }}</option>
               {% endfor %}
@@ -34,7 +34,7 @@
           </li>
         </ul>
       </div>
-      <button class="main-button" type="submit" formaction="/">Traduzir</button>
+      <button class="main-button" type="submit" formaction="/">Translate</button>
     </form>
   </div>
 </body>
