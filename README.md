@@ -62,7 +62,7 @@ A text translation tool between several languages, using Python with the Flask F
 7. Access the URL:
 
     ```bash
-    <http://127.0.0.1:8000/>
+    http://127.0.0.1:8000/
     ```
 
 8. If you want to run tests:
